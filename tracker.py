@@ -67,7 +67,8 @@ print(f"Grand total:\t${total}")
 
 if amount1 > 100 and amount2 > 100:
     print("Two big expenses in a row - slow down!")
-elif over_budget:
+    
+if over_budget:
     print(f"Over budget by ${total - budget:.1f}!")
 elif total >= budget * 0.9:
     print(f"Careful: only ${left:.1f} left.")
